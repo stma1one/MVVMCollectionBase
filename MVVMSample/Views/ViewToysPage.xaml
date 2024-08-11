@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helpers="clr-namespace:MVVMSample.Helpers"
+             x:Class="MVVMSample.Views.ViewToysPage">
+
+
+
+
+    <Grid Padding="10"
+          ColumnSpacing="3"
+          RowSpacing="2"
+          RowDefinitions="*,*,*,5*,*">
+
+        <Label Text="אוסף הצעצועים שלנו"
+               FontSize="26"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+        <!--  Filters  -->
+        <Grid Margin="3"
+              Grid.Row="1"
+              ColumnSpacing="3"
+              RowSpacing="6"
+              RowDefinitions="*,*"
+              ColumnDefinitions="*,*">
+            <Entry Margin="5,0"
+                   HeightRequest="50"
+                   Grid.ColumnSpan="2"
+                   Placeholder="הכנס מחיר לסינון"
+                   Keyboard="Numeric" />
+
+            <Button VerticalOptions="Start"
+                    HeightRequest="40"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="סנן מעל המחיר" />
+
+            <Button VerticalOptions="Start"
+                    Grid.Row="1"
+                    HeightRequest="40"
+                    Grid.Column="1"
+                    Text="סנן מתחת למחיר" />
+        </Grid>
+
+        <!--  lets do רענון  -->
+
+
+        <!--  CollectionView  -->
+
+        <!--  End CollectionView  -->
+        <!--  end refresh  -->
+
+    </Grid>
+</ContentPage>
